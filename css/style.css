@@ -1,0 +1,46 @@
+body{
+    background-color: #68BE4C;
+}
+.loginbox{
+    width: 400px;
+    background-color: white;
+    padding: 50px;
+    margin: auto;
+    margin-top: 150px;
+    box-shadow: 1px ​1px 5px #1E1E1E;
+    border-radius: 9px;
+    /*transform: skew(-10deg);*/
+}
+.loginbox:hover{
+    transform: translate(10px);
+}
+.loginbox form input{
+    background-color: #F2F2F2;
+    outline: none;
+    border: none;
+    display: block;
+    padding: 20px;
+    margin:20px;
+    width: 80%;
+}
+.csslogin{
+    width: 90%!important;
+    background: linear-gradient(#00B241,#1E1E1E)!important;
+}
+.csslogin:hover{
+    background:linear-gradient(#1E1E1E,#00B241)!important;
+    cursor: pointer;
+}
+.register{
+    text-align: center;
+}
+.register a{
+    text-decoration: none;
+}
+.register:visited{
+    color:red;
+}
+.head{
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
