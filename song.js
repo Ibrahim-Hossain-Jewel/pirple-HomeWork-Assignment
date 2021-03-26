@@ -94,10 +94,6 @@ function show(rainbow){ //
 }
 show(rainbow);//must have to pass data through this value;
 
-/*Completed the array constructor*/
-
-
-
 
 
 
