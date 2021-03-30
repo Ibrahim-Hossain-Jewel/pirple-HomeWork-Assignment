@@ -43,7 +43,13 @@ var studentobj1 = {
 
 function student1(objectdata){
     objectdata.area = 'bangladesh is our country';
-    
 }
 student1(studentobj1);
 console.log(studentobj1);
+//now make an array and push an element to the array by a function
+var electronic = ['mobile','laptop','desktop'];
+function pusharray(arrayData){ //now arrayData is array name.
+    arrayData.push(120000);
+}
+pusharray(electronic);
+console.log(electronic);
