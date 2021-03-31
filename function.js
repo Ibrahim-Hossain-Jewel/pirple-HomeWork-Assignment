@@ -92,3 +92,49 @@ function username(firstname, lastname, age){
 }
 var man = username('Ibrahim Hossain','Jewel',23); //invoking function to return name with space;
 console.log(man);
+
+//staring the Advance function;
+//function expression,arrow function, map function;
+//let's stat the expression function;
+var expressionfunctionMessage = function(){
+    console.log("Hi i'm from expression function");
+}
+expressionfunctionMessage();//invoked the function expression.
+//Let's start with the arrow function it's most popular in ES6 version
+var arrowfunction = () => {
+    console.log("Hello i'm from arrow function");
+}
+arrowfunction();
+//starting map function it is use to get certain data from your object. it's a iterative method
+var studentarray = [
+    {name:'ibrahim',age: 22},
+    {name: 'jewel', age: 23},
+    {name: 'Hossain',age: 17}
+];
+//find-out all the name from the array's objects
+const holder1 = (studentobjectlist)=>{ //now holder1 is function name.
+    var studentlistholder = studentobjectlist.map((student)=>{
+        return student.name;
+    });
+    return studentlistholder;
+}
+var studentarraylist = holder1(studentarray);
+console.log(studentarraylist);
+
+//if you need single value returning function then your arrow function is too much usefull.
+const multiply = (a,b)=> a*b;
+console.log(multiply(11,11));  
+//if your function take 1 parameter then you can omit the parameter brace like thet below;
+const squarer = num => num*num; //this is es6 code overhere;
+console.log(squarer(9));
+
+//made an array with object list and then find-out the all list student name as a array list;
+var csestudent = [
+    {name:'Ibrahim', lastname: 'hossain',age: 22},
+    {name: 'Jewel', lastname: 'rana', age:12},
+    {name: 'Raihan', lastname: 'Hossain', age: 23},
+    {name: 'shawon', lastname: 'Hossain', age: 22}
+];
+//now findout the all name from the array objects.
+var csestudentName = csestudent.map(snamelist=>snamelist.age);
+console.log(csestudentName);
