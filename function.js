@@ -138,3 +138,11 @@ var csestudent = [
 //now findout the all name from the array objects.
 var csestudentName = csestudent.map(snamelist=>snamelist.age);
 console.log(csestudentName);
+/*ended the map() function worked with object mapping*/
+
+/*Starting filter() it's use to make new array from an existing array*/
+var studentRoll = ['jewel','jewel','vodor','vodor','vodor'];
+var rollcontainer = studentRoll.filter(function(student){
+    return student ==='jewel';
+});
+console.log(rollcontainer);
