@@ -67,18 +67,18 @@ var x = squareAndMultiply(12,12);
 console.log(x);
 //why you will assign a function in a variable because to reuse code.
 
-//now make a function for firstname, lastname
+//now make a function for firstname, lastname, and age 
 function username(firstname, lastname, age){
-    //make a function to return firstname, lastname.
-    function formattedName(firstOne, lastOne){
-        return firstOne+ ' '+lastOne;
+    //made a function for string concatenation
+    function formattedName(userfirstname, userlastname){
+        return userfirstname+ ' '+userlastname;
     }
-    //Make a function for object.
-    function userData(fullName,ageNumber){
-        //now make an object;
+    //made a function for making the concatenate object.
+    function userData(fullName,userAge){
+        //now made all the info into object;
         var personinfo ={
             usernameHolder: fullName,
-            passwordHolder: ageNumber
+            passwordHolder: userAge
         }
         return personinfo; //this function returning object;
     }
