@@ -53,3 +53,42 @@ function pusharray(arrayData){ //now arrayData is array name.
 }
 pusharray(electronic);
 console.log(electronic);
+//Now learn nested function and inside this function make a private function.
+function squareAndMultiply(num1,num2){
+    function squareX(x){
+        return x*x;
+    }
+    function squareY(y){ //this is nested function overhere;
+        return y*y;
+    }
+    return squareX(num1) * squareY(num2);
+}
+var x = squareAndMultiply(12,12);
+console.log(x);
+//why you will assign a function in a variable because to reuse code.
+
+//now make a function for firstname, lastname
+function username(firstname, lastname, age){
+    //make a function to return firstname, lastname.
+    function formattedName(firstOne, lastOne){
+        return firstOne+ ' '+lastOne;
+    }
+    //Make a function for object.
+    function userData(fullName,ageNumber){
+        //now make an object;
+        var personinfo ={
+            usernameHolder: fullName,
+            passwordHolder: ageNumber
+        }
+        return personinfo; //this function returning object;
+    }
+    //Now make a function to call all another function.
+    function callingPrivateFunction(firstname,lastname,age){
+        const formattedUserName = formattedName(firstname,lastname);
+        const userDataName = userData(formattedUserName, age);
+        return userDataName;
+    }
+    return callingPrivateFunction(firstname,lastname,age);
+}
+var man = username('Ibrahim Hossain','Jewel',23); //invoking function to return name with space;
+console.log(man);
