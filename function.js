@@ -200,5 +200,16 @@ function buyItem(price, accountbalance = creditCar){ //this accountbalance able 
 console.log(buyItem(99));
 console.log(buyItem(112));//now don't have enough balance.
 //buy product with another bank account.
-console.log(buyItem(32,{Balance:30,wantToBye:true}));//it's return true because this is another account.
+var jewelAccount = {  //along with you can this is an another bank account right.
+    Balance:299,
+    wantToBye: true
+}
+console.log(buyItem(30,jewelAccount));//it's return true because this is another account.
 
+//Let's start learning the arguments keyword that's convert the function parameter into Object
+function addthreenumber(x){ //you can pass all the value by the x parameter.
+    console.log(arguments);//this argument keyword make all the parameter into object. now convert the object into array.
+    const objectoarray = Array.prototype.slice.call(arguments,addthreenumber.length);
+    console.log(objectoarray);
+}
+addthreenumber(12,32,33,12,123,32,3,55);//you can pass a lot value when you are invoking value to the function.
