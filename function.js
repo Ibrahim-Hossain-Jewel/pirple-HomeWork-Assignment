@@ -158,3 +158,11 @@ function doubleElement(num){
     return emptyarray;
 }
 console.log(doubleElement(numbers));
+
+//Set default value here.
+function defaultMultiply(i,j){
+    i = i || 2; //Set's the default value.
+    j = j || 2; //Set's the default value.
+    console.log(i*j);
+}
+defaultMultiply(); //return NaN because did not passed any value;now set a default value if you don't pass any value must set a default value with the assignment operator also can with Or|| operator;
