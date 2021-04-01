@@ -146,3 +146,15 @@ var rollcontainer = studentRoll.filter(function(student){
     return student ==='jewel';
 });
 console.log(rollcontainer);
+
+var numbers = [1,2,3,5,7,8,9,10,'jewel'];
+//Made an array element into doubled.
+function doubleElement(num){
+    const emptyarray = []; //To keep all multiplyed data inside this.
+    num.forEach(function(singleElement){
+        const numberdoubler = singleElement*2;
+       emptyarray.push(numberdoubler);
+    });
+    return emptyarray;
+}
+console.log(doubleElement(numbers));
