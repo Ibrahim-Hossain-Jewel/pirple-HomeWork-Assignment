@@ -166,3 +166,20 @@ function defaultMultiply(i,j){
     console.log(i*j);
 }
 defaultMultiply(); //return NaN because did not passed any value;now set a default value if you don't pass any value must set a default value with the assignment operator also can with Or|| operator;
+
+
+//made default function that set's split(" "); function inside this.
+var defaultMessage = "Your data did not input from the user";
+function showDefaultMessage(i=defaultMessage){
+    var x = i.split(' ');//split(" ") return an array if you provide space only.
+    console.log(x[0]);
+    return x;
+}
+const showData = showDefaultMessage();
+console.log(showData);
+
+//Now make purchaseItem code segment that's will be reusable
+var creditCar = {
+    Balance: 100,
+    wantToBye: true
+}
