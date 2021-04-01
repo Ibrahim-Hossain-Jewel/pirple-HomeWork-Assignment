@@ -183,3 +183,18 @@ var creditCar = {
     Balance: 100,
     wantToBye: true
 }
+/*Making a function to buy a item*/
+function buyItem(price, accountbalance = creditCar){
+    if(accountbalance.wantToBye){
+        accountbalance.Balance -= price;
+        if(accountbalance.Balance<0){
+            return accountbalance.wantToBye = false;
+        }
+        return true;
+    }
+    else{
+        return accountbalance.wantToBye = false;
+    }
+}
+console.log(buyItem(120));
+console.log(buyItem(12));
