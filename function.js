@@ -184,7 +184,7 @@ var creditCar = {
     wantToBye: true
 }
 /*Making a function to buy a item*/
-function buyItem(price, accountbalance = creditCar){
+function buyItem(price, accountbalance = creditCar){ //this accountbalance able to take different bank account.
     if(accountbalance.wantToBye){
         accountbalance.Balance -= price;
         if(accountbalance.Balance<0){
@@ -196,5 +196,9 @@ function buyItem(price, accountbalance = creditCar){
         return accountbalance.wantToBye = false;
     }
 }
-console.log(buyItem(120));
-console.log(buyItem(12));
+//we can buyitem with different bank account;
+console.log(buyItem(99));
+console.log(buyItem(112));//now don't have enough balance.
+//buy product with another bank account.
+console.log(buyItem(32,{Balance:30,wantToBye:true}));//it's return true because this is another account.
+
