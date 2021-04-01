@@ -213,3 +213,35 @@ function addthreenumber(x){ //you can pass all the value by the x parameter.
     console.log(objectoarray);
 }
 addthreenumber(12,32,33,12,123,32,3,55);//you can pass a lot value when you are invoking value to the function.
+
+
+
+//Convert a function parameter into array.
+function fivenumbers(u){ //if you provide one value then it will omit the first one.
+    //make all the parameter into Object
+    console.log(arguments);
+    //Now transform it into array
+    const usernumber = Array.prototype.slice.call(arguments,fivenumbers.length);
+    console.log(usernumber.sort());
+}
+fivenumbers(1,2,3,5,7,8,9,1011,1,1,11,1,1,1);
+
+//make a function with ...num arguments.
+function multiplyForNum(i, ...num){
+    //multiply all number;
+    num.forEach((n)=>{
+        console.log(n*i);
+    });
+}
+multiplyForNum(10,5,6,7,8,9,10,11);
+
+//this keyword used in function but you can't use is inside the arrow function.
+function person(name,age){
+    this.personName = name;
+    this.personAge = age;
+}
+var dataName = new person('ibrahim hossain',22); //This is function instance overhere.
+var abouttosiba = new person('ibrahim hossain',33); //This is another instance.
+console.log(dataName);
+console.log(abouttosiba);
+
