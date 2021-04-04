@@ -235,13 +235,25 @@ function multiplyForNum(i, ...num){
 }
 multiplyForNum(10,5,6,7,8,9,10,11);
 
-//this keyword used in function but you can't use is inside the arrow function.
+//this keyword used in function but you can't use is inside the arrow function. this keyword dose not support into the arrow
 function person(name,age){
+    const that = this;
     this.personName = name;
     this.personAge = age;
+    //this setInterval() method support the arrow function;
+    setInterval(()=>{
+        this.personAge+=1;
+        console.log(this); //this keyword byDefault is block scoped. this help's to return with the object.
+    },2000);
 }
 var dataName = new person('ibrahim hossain',22); //This is function instance overhere.
 var abouttosiba = new person('ibrahim hossain',33); //This is another instance.
 console.log(dataName);
 console.log(abouttosiba);
 
+//Now make a function with 'use strict' mode;
+function testFunction(){
+    'use strict';//use strict mode must terminate with semicolon;
+    console.log(this);
+}
+testFunction();
