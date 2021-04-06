@@ -45,7 +45,7 @@ do{
 //now make a condition value while press q then exit; do while loop execute the code minimum one time overhere.
 var condition = false;
 do{
-    var userInput = prompt("Enter your vlaue ");
+    var userInput = 'q';
 
     if(userInput === 'q'){
         condition = false;
@@ -59,17 +59,58 @@ do{
 var purchase = true;
 var balance = 1000;
 do{
-    purchaseFunction(balance);
+    purchaseFunction();
     purchase = false;
-}while(balance>500);
+}while(purchase);
 // Above 500 tk then you can purchase item.
-function purchaseFunction(itemValue) {
-    if(itemValue>500){
+function purchaseFunction() {
+    if(balance>500){
         console.log("you can purchase the item");
     }else{
         console.log("you can not purchase the item");
-        break;
     }
 }
 //Repeat until a specified conditions evaluates false.
 //Now start false value
+console.log('Started for loop');
+var iceCream = ["Vanilla","Chocolate","Rocky Road","Strawberry"];
+function  iceCreamLooper(pramsArray) {
+    for (let i = 0; i < 100; i++) {
+        if (i%15===0) {
+            console.log('Jewel');
+        }
+        else if(i%10===0) {
+            console.log(i);
+        }
+        else{
+            console.log(i);
+        }
+    }
+}
+iceCreamLooper(iceCream);
+/*
+    for (var s = 0; s < 10; s++) {
+    ice(s);
+}
+function ice(params) {
+    //when you are using anonymous function then don't have to use the parameter holder variable
+    setTimeout(function() { //inside a handelar dose not need the argument in anonymous function.
+        console.log(params);
+    },params*1000);
+}
+//use of setTimeOut() function in JavaScript using for loop and while loop.
+
+*/
+//used for loop and function has been completed.
+//now let's start the the work with while loop.
+console.log('Started while Loop');
+var other = 0;
+while(other<5){
+    other++;
+    icewhile(other);
+}
+function icewhile(prams) {
+        setTimeout(() => {
+            console.log(prams);
+        }, 1500*prams);
+}
