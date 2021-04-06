@@ -123,11 +123,37 @@ var stuobject = {
 for(let prop in stuobject){
     console.log(stuobject[prop]);
 }
-
 //Arbitrary order loop in javascript show the array key and value.
 var broList = ['Jewel','Ibrahim','Self','Raju','Doel','Saju','Raju'];//the array key return the key as string
-for(let brokey in broList){
-    if (broList[brokey]==='Doel') {
+/*
+    for(let brokey in broList){
+    if (broList[brokey]==='Jewel') {
         break;
     }
 }
+*/
+//now we are going to talk about For of  ... loop
+var nameFriend = ['jjjjhh','xr','yyyttytu','jgjkgjh'];
+var country = "Bangladesh";//just output serially or sequentially
+
+for(var d of country){ //The of keyword directly return the value it's dose not retrun the key value. 
+    console.log(d);
+}
+//the of value dose not return the key value.
+for(var k in nameFriend){
+    if (nameFriend[k]==='xr') { //the in mean inside value. the in loop can be used on object property.
+        break;
+    }
+    console.log(nameFriend[k]);
+}
+//Make an array and addition with each element.
+var mother = [10,20,22,21];
+//number increaser with function.
+function increaser(arr,value) {
+    for(let number of arr){ //must use the container variable
+        number+=value;
+        console.log(number);
+    }
+}
+//now invoking the function overhere
+increaser(mother,20);
