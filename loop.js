@@ -121,16 +121,7 @@ var stuobject = {
 }
 //write a loop for findout the properties name and value;
 for(let prop in stuobject){
-    //printing key;
-    //console.log(prop);
-    //printing value;
-    //console.log(stuobject[prop]);
-    //now findOut a certain value that's you are looking for.
-    if (stuobject[prop]==='jewel rana') {
-        console.log("My name is : "+stuobject[prop]);
-        stuobject[prop]="Unknown";
-        console.log(stuobject[prop]);
-    }
+    console.log(stuobject[prop]);
 }
 
 //Arbitrary order loop in javascript show the array key and value.
