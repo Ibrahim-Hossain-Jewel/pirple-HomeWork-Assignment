@@ -103,6 +103,7 @@ function ice(params) {
 */
 //used for loop and function has been completed.
 //now let's start the the work with while loop.
+/*Emergency question how to show the setTimeOut() vlaue in the currect situation*/
 console.log('Started while Loop');
 var other = 0;
 while(other<5){
@@ -111,6 +112,31 @@ while(other<5){
 }
 function icewhile(prams) {
         setTimeout(() => {
-            console.log(prams);
+            console.log('prams');
         }, 1500*prams);
+}
+//write down such a loop that print properties key and properties value.
+var stuobject = {
+    nickname: 'jewel rana',originalName: 'Ibrahim Hossain',age:22,weight: 70+'Kg',height: '5 ft 8 inch'
+}
+//write a loop for findout the properties name and value;
+for(let prop in stuobject){
+    //printing key;
+    //console.log(prop);
+    //printing value;
+    //console.log(stuobject[prop]);
+    //now findOut a certain value that's you are looking for.
+    if (stuobject[prop]==='jewel rana') {
+        console.log("My name is : "+stuobject[prop]);
+        stuobject[prop]="Unknown";
+        console.log(stuobject[prop]);
+    }
+}
+
+//Arbitrary order loop in javascript show the array key and value.
+var broList = ['Jewel','Ibrahim','Self','Raju','Doel','Saju','Raju'];//the array key return the key as string
+for(let brokey in broList){
+    if (broList[brokey]==='Doel') {
+        break;
+    }
 }
