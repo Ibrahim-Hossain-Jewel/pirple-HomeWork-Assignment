@@ -142,7 +142,7 @@ for(var d of country){ //The of keyword directly return the value it's dose not 
 //the of value dose not return the key value.
 for(var k in nameFriend){
     if (nameFriend[k]==='xr') { //the in mean inside value. the in loop can be used on object property.
-        break;
+        break;//for in... it's grate for object's
     }
     console.log(nameFriend[k]);
 }
@@ -157,3 +157,11 @@ function increaser(arr,value) {
 }
 //now invoking the function overhere
 increaser(mother,20);
+
+//how to use the new Set() method. About new Set() method it's return the unique set from an object.
+var friendList = ['jewel','nasima','toshiba','rashidul','hossain','jewel'];
+//now find-out the distinct name from the array first of all if you want to make distinct array then use the new Set() method
+var uniqueNames = new Set(friendList);//the new Set() method take's one arguments. then make's it distinct.
+for(let all of uniqueNames){
+    console.log(all);
+}
