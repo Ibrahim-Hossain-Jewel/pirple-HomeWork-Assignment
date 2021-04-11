@@ -52,5 +52,17 @@ for(let lather of phoneProperty){
 }
 //now if you want to select first one then use the querySelector();
 const selectFirst = document.querySelector('.phone span');
-
+//it's support the css selector.
 selectFirst.style.color = 'blue';
+
+/*Now learning the traversing of DOM*/
+/*When you are going to back using parentNode keyword after that it's call traversing*/
+//the dom api help us to traverse the document.
+//it's help us to find-out the childNodes and parentNodes
+//find-out the childNodes of mouse.
+var selectMouse = document.getElementById('mouse');
+/*childNodes: It will return the all the child elements of dom selector the childNodes dose not omit a single space*/
+console.log(selectMouse.childNodes);
+
+//now findout the parentNodes from the dom tree structure.
+console.log(selectMouse.parentNode);
