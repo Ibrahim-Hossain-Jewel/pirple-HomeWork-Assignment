@@ -46,7 +46,11 @@ bangladeshHolder.style.color = 'red';
 //inline css has most precedence then external css. it's either css or javascript.
 bangladeshHolder.style.fontSize = '110px';
 const phoneProperty = document.querySelectorAll('.phone span');
-/*the querySelectorAll() it's supported by loop only it's without it will show error*/
+/*the querySelectorAll() it's supported by loop only it's without it will show undefined the property*/
 for(let lather of phoneProperty){
     lather.style.fontSize = '22px';
 }
+//now if you want to select first one then use the querySelector();
+const selectFirst = document.querySelector('.phone span');
+
+selectFirst.style.color = 'blue';
