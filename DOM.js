@@ -62,7 +62,7 @@ selectFirst.style.color = 'blue';
 //find-out the childNodes of mouse.
 var selectMouse = document.getElementById('mouse');
 /*childNodes: It will return the all the child elements of dom selector the childNodes dose not omit a single space*/
-console.log(selectMouse.childNodes);
+console.log(selectMouse.childNodes.length);
 
 //now findout the parentNodes from the dom tree structure.
 console.log(selectMouse.parentNode);
