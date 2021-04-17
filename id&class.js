@@ -20,6 +20,7 @@ qmouse.style.background = 'black';
 qmouse.style.width = '110px';
 //nested multiple comment dose not support the js
 */
+/*
 const purpleHolder = document.querySelectorAll('.purple');
 console.log(purpleHolder);
 for(let prop of purpleHolder){
@@ -39,3 +40,9 @@ console.log(idholder.classList);
 idholder.className = 'jewel';
 idholder.classList.add('rana');
 idholder.classList.add('diffClas');
+*/
+const creationDiv = document.getElementById('created');
+const newElement = document.createElement('P');
+newElement.innerText = "Hello bangaldesh!";
+console.log(newElement);
+creationDiv.appendChild(newElement);
